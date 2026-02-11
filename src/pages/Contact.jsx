@@ -1,4 +1,3 @@
-import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 
@@ -20,56 +19,54 @@ const Contact = () => {
   const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setCurrentAnimation("hit");
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  setLoading(true);
+  setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "JavaScript Mastery",
-          from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your message 😃",
-            type: "success",
-          });
+  try {
+    const response = await fetch("https://formspree.io/f/xaqdyblk", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
 
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
-            });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          setCurrentAnimation("idle");
+    if (response.ok) {
+      showAlert({
+        show: true,
+        text: "Thank you for your message 😃",
+        type: "success",
+      });
 
-          showAlert({
-            show: true,
-            text: "I didn't receive your message 😢",
-            type: "danger",
-          });
-        }
-      );
-  };
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      });
+
+      setCurrentAnimation("idle");
+
+      setTimeout(() => {
+        hideAlert();
+      }, 3000);
+    } else {
+      throw new Error("Form submission failed");
+    }
+  } catch (error) {
+    console.error(error);
+    showAlert({
+      show: true,
+      text: "I didn't receive your message 😢",
+      type: "danger",
+    });
+    setCurrentAnimation("idle");
+  }
+
+  setLoading(false);
+};
+
 
   return (
     <section className='relative flex lg:flex-row flex-col max-container'>
