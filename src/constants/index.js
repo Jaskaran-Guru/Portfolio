@@ -106,13 +106,6 @@ export const projects = [
         link: "https://github.com/Jaskaran-Guru/3D_portfolio",
     },
     {
-        iconUrl: threads,
-        theme: "btn-back-green",
-        name: "BFHL API",
-        description: "Backend API service with RESTful endpoints and data processing capabilities.",
-        link: "https://github.com/Jaskaran-Guru/bfhl-api",
-    },
-    {
         iconUrl: car,
         theme: "btn-back-blue",
         name: "Blog Platform",
