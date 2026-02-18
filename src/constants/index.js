@@ -96,13 +96,7 @@ export const socialLinks = [
 ];
 
 export const projects = [
-    {
-        iconUrl: pricewise,
-        theme: "btn-back-red",
-        name: "3D Portfolio",
-        description: "Interactive 3D portfolio website showcasing projects and skills with immersive animations.",
-        link: "https://github.com/Jaskaran-Guru/3D_portfolio",
-    },
+    
     {
         iconUrl: car,
         theme: "btn-back-blue",
@@ -180,13 +174,7 @@ export const projects = [
         description: "Pomodoro technique timer with task management and productivity tracking.",
         link: "https://github.com/Jaskaran-Guru/Parmodaro-Clock",
     },
-    {
-        iconUrl: threads,
-        theme: "btn-back-green",
-        name: "Portfolio Website",
-        description: "Personal portfolio website showcasing projects, skills, and experience.",
-        link: "https://github.com/Jaskaran-Guru/Portfolio",
-    },
+    
     {
         iconUrl: car,
         theme: "btn-back-blue",
