@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom";
-
 import { CTA } from "../components";
 import { projects } from "../constants";
-import { arrow } from "../assets/icons";
 
 const Projects = () => {
   return (
@@ -15,36 +12,46 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+       
       </p>
 
-      <div className='flex flex-wrap my-20 gap-16'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 my-16'>
         {projects.map((project) => (
-          <div className='lg:w-[400px] w-full' key={project.name}>
-            <div className='block-container w-12 h-12'>
-              <div className={`btn-back rounded-xl ${project.theme}`} />
-              <div className='btn-front rounded-xl flex justify-center items-center'>
+          <div
+            className='w-full p-6 rounded-3xl bg-white border border-slate-200/80 shadow-sm hover:shadow-md transition-all flex flex-col'
+            key={project.name}
+          >
+            <div className='block-container w-14 h-14'>
+              <div className={`btn-back rounded-2xl ${project.theme}`} />
+              <div className='btn-front rounded-2xl flex justify-center items-center p-2.5'>
                 <img
                   src={project.iconUrl}
-                  alt='threads'
-                  className='w-1/2 h-1/2 object-contain'
+                  alt={project.name}
+                  className='w-3/4 h-3/4 object-contain'
                 />
               </div>
             </div>
 
             <div className='mt-5 flex flex-col'>
-              <h4 className='text-2xl font-poppins font-semibold'>
+              <h4 className='text-xl font-poppins font-bold text-slate-800 leading-snug'>
                 {project.name}
               </h4>
-              <p className='mt-2 text-slate-500'>{project.description}</p>
-              <div className='mt-5 flex items-center gap-2 font-poppins'>
-            
-           
-              </div>
+              <p className='mt-2 text-slate-600 text-sm leading-relaxed'>
+                {project.description}
+              </p>
+
+              {project.tags && (
+                <div className='mt-4 flex flex-wrap gap-1.5'>
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className='text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-100'
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
         ))}

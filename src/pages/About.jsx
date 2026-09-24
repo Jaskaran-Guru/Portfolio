@@ -46,10 +46,10 @@ const About = () => {
       </div>
 
       <div className='py-16'>
-        <h3 className='subhead-text'>Work Experience.</h3>
+        <h3 className='subhead-text'>Technical Experience.</h3>
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-      
+            Core CSE foundation + PLM/Teamcenter specialization
           </p>
         </div>
 
@@ -57,15 +57,15 @@ const About = () => {
           <VerticalTimeline>
             {experiences.map((experience, index) => (
               <VerticalTimelineElement
-                key={experience.company_name}
+                key={experience.title}
                 date={experience.date}
                 iconStyle={{ background: experience.iconBg }}
                 icon={
-                  <div className='flex justify-center items-center w-full h-full'>
+                  <div className='flex justify-center items-center w-full h-full p-2.5'>
                     <img
                       src={experience.icon}
                       alt={experience.company_name}
-                      className='w-[60%] h-[60%] object-contain'
+                      className='w-full h-full object-contain filter drop-shadow'
                     />
                   </div>
                 }
@@ -89,9 +89,9 @@ const About = () => {
                 </div>
 
                 <ul className='my-5 list-disc ml-5 space-y-2'>
-                  {experience.points.map((point, index) => (
+                  {experience.points.map((point, pIndex) => (
                     <li
-                      key={`experience-point-${index}`}
+                      key={`experience-point-${pIndex}`}
                       className='text-black-500/50 font-normal pl-1 text-sm'
                     >
                       {point}

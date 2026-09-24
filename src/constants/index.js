@@ -1,93 +1,418 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
 import {
-    car,
     css,
-    estate,
     express,
     git,
     github,
     html,
     javascript,
-    linkedin,
     mongodb,
-    mui,
-    nextjs,
     nodejs,
-    pricewise,
     react,
+    tailwindcss,
+    typescript,
+    linkedin,
+    car,
+    estate,
+    pricewise,
     snapgram,
     summiz,
-    tailwindcss,
     threads,
-    typescript,   
+    siemens,
+    teamcenter,
+    plm,
+    bmide,
+    workflow,
+    awc,
+    itk,
+    deployment,
+    c,
+    cpp,
+    java,
+    python,
+    sql,
+    mariadb,
+    redis,
+    neo4j,
+    influxdb,
+    dsa,
+    cs
 } from "../assets/icons";
 
+// Primary Skills with 3D Pop Icons - Teamcenter & PLM prioritized first, followed by Core CSE & Tech
 export const skills = [
-    { imageUrl: css, name: "CSS", type: "Frontend" },
-    { imageUrl: express, name: "Express", type: "Backend" },
-    { imageUrl: git, name: "Git", type: "Version Control" },
-    { imageUrl: github, name: "GitHub", type: "Version Control" },
-    { imageUrl: html, name: "HTML", type: "Frontend" },
-    { imageUrl: javascript, name: "JavaScript", type: "Frontend" },
-    { imageUrl: mongodb, name: "MongoDB", type: "Database" },
-    { imageUrl: mui, name: "Material-UI", type: "Frontend" },
-    { imageUrl: nextjs, name: "Next.js", type: "Frontend" },
+    // PLM & Teamcenter Suite (Priority #1)
+    { imageUrl: teamcenter, name: "Siemens Teamcenter", type: "PLM & Architecture" },
+    { imageUrl: plm, name: "PLM (Product Lifecycle Management)", type: "Engineering & Lifecycle" },
+    { imageUrl: bmide, name: "BMIDE Data Modeling", type: "Teamcenter Configuration" },
+    { imageUrl: awc, name: "Active Workspace (AWC)", type: "Web PLM Client" },
+    { imageUrl: workflow, name: "Workflow Designer & EPM", type: "Process Automation" },
+    { imageUrl: itk, name: "ITK & SOA Customization", type: "Server-side Extensibility" },
+    { imageUrl: deployment, name: "Deployment Center", type: "Enterprise Deployment" },
+
+    // Programming Languages & Foundations (Priority #2)
+    { imageUrl: c, name: "C Language", type: "Programming" },
+    { imageUrl: cpp, name: "C++", type: "Programming & ITK" },
+    { imageUrl: java, name: "Java", type: "Programming & SOA" },
+    { imageUrl: python, name: "Python", type: "Programming & Scripting" },
+    { imageUrl: javascript, name: "JavaScript", type: "Web & AWC" },
+    { imageUrl: sql, name: "SQL", type: "Relational Database" },
+
+    // Core Computer Science (Priority #3)
+    { imageUrl: cs, name: "Core CS (OS, Networks, DBMS)", type: "Core CS" },
+
+    // Web & Database Technologies
+    { imageUrl: react, name: "React.js", type: "Frontend" },
     { imageUrl: nodejs, name: "Node.js", type: "Backend" },
-    { imageUrl: react, name: "React", type: "Frontend" },
+    { imageUrl: express, name: "Express.js", type: "Backend" },
+    { imageUrl: html, name: "HTML5", type: "Frontend" },
+    { imageUrl: css, name: "CSS3", type: "Frontend" },
     { imageUrl: tailwindcss, name: "Tailwind CSS", type: "Frontend" },
     { imageUrl: typescript, name: "TypeScript", type: "Frontend" },
 
+    // Databases & Tools
+    { imageUrl: mongodb, name: "MongoDB", type: "Database" },
+    { imageUrl: redis, name: "Redis", type: "In-Memory Database" },
+    { imageUrl: mariadb, name: "MariaDB", type: "Database" },
+    { imageUrl: neo4j, name: "Neo4j", type: "Graph Database" },
+    { imageUrl: influxdb, name: "InfluxDB", type: "Time-Series Database" },
+    { imageUrl: git, name: "Git", type: "Version Control" },
+    { imageUrl: github, name: "GitHub", type: "Version Control" },
 ];
 
+// Structured Portfolio Skill Layout (As recommended for Teamcenter & PLM Fresher)
+export const plmSkillCategories = [
+    {
+        title: "PLM & Architecture",
+        tagline: "Siemens Teamcenter & Product Lifecycle Foundations",
+        badge: "Primary Core",
+        icon: teamcenter,
+        skills: [
+            "Siemens Teamcenter",
+            "Product Lifecycle Management (PLM)",
+            "Teamcenter Architecture",
+            "Teamcenter 2-Tier / 4-Tier Architecture",
+            "Teamcenter Rich Client (RAC)",
+            "Active Workspace (AWC)",
+            "Teamcenter Administration",
+            "Teamcenter Data Management",
+            "Product Structure / BOM Management",
+            "EBOM / MBOM Concepts",
+            "Revision & Version Management",
+            "Item / Item Revision Management",
+            "Dataset & Named Reference Management",
+            "Document Management",
+            "Change Management",
+            "Workflow Management",
+            "Access Control"
+        ]
+    },
+    {
+        title: "Teamcenter Configuration",
+        tagline: "BMIDE Data Model, Business Objects & Schema Rules",
+        badge: "High Proficiency",
+        icon: bmide,
+        skills: [
+            "BMIDE (Business Modeler Integrated Development Environment)",
+            "Data Model Configuration",
+            "Business Objects",
+            "Persistent Properties",
+            "Runtime Properties",
+            "Compound Properties",
+            "Table Properties",
+            "LOVs (List of Values - Standard & Dependent)",
+            "Naming Rules",
+            "Iman Relations & Specification Relations",
+            "Custom Relations",
+            "Forms & Datasets Configuration",
+            "Item / Item Revision Configuration",
+            "Organization Structure",
+            "Users, Groups & Roles",
+            "Projects & Access Control",
+            "Access Manager (Rule Trees & Privileges)",
+            "Preferences Management",
+            "Volumes Management",
+            "Query Builder & Report Builder"
+        ]
+    },
+    {
+        title: "Teamcenter Workflow & EPM",
+        tagline: "Workflow Designer, Lifecycle Automation & Handler Rules",
+        badge: "Applied Project Focus",
+        icon: workflow,
+        skills: [
+            "Teamcenter Workflow Designer",
+            "Workflow Templates",
+            "EPM Handlers (Action & Rule Handlers)",
+            "Workflow Routing & Auto Assignment",
+            "Approval Workflows",
+            "Review / Approval / Rejection Processes",
+            "Task Management",
+            "Role-Based Assignment",
+            "Workflow Conditions",
+            "Workflow Demotion & Demote on Reject",
+            "Sub-processes Management",
+            "Property Validation",
+            "Target Object Validation"
+        ]
+    },
+    {
+        title: "Teamcenter Customization",
+        tagline: "Server-side ITK, Extensions, DLL & SOA Integration",
+        badge: "Developer Level",
+        icon: itk,
+        skills: [
+            "Teamcenter ITK Basics",
+            "ITK APIs & Server-side Customization",
+            "Method Extensions",
+            "Handler Extensions",
+            "DLL Development",
+            "Custom Methods & Actions",
+            "Custom Workflow Handlers",
+            "Teamcenter SOA Basics",
+            "Customization Deployment",
+            "Troubleshooting / RCA (Root Cause Analysis)"
+        ]
+    },
+    {
+        title: "Active Workspace (AWC)",
+        tagline: "Modern Declarative UI, Architecture & Search",
+        badge: "Web PLM",
+        icon: awc,
+        skills: [
+            "Active Workspace (AWC)",
+            "AWC Architecture",
+            "AWC Configuration",
+            "Search Configuration & Indexing",
+            "Tiles & Tile Collections",
+            "Commands / Actions Configuration",
+            "UI Configuration & Declarative Layout",
+            "Workspace Configuration",
+            "Active Workspace Administration",
+            "Server-side AW Customization",
+            "Deployment Center Integration",
+            "AW Deployment & Troubleshooting"
+        ]
+    },
+    {
+        title: "Teamcenter Installation & Deployment",
+        tagline: "Deployment Center, Upgrades & Environment Setup",
+        badge: "Infrastructure",
+        icon: deployment,
+        skills: [
+            "Teamcenter Installation",
+            "Teamcenter Deployment",
+            "Deployment Center (DC)",
+            "Active Workspace Deployment",
+            "Teamcenter Environment Configuration",
+            "Server Restart & Deployment Sequences",
+            "Configuration Troubleshooting",
+            "Basic Installation / Upgrade Concepts",
+            "Deployment Troubleshooting & Logs"
+        ]
+    },
+    {
+        title: "Programming / Technical Skills",
+        tagline: "Programming Languages, Algorithms & Version Control",
+        badge: "Engineering Core",
+        icon: cpp,
+        skills: [
+            "C",
+            "C++",
+            "Java",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Python",
+            "SQL",
+            "Git",
+            "GitHub",
+            "Basic Data Structures & Algorithms"
+        ]
+    },
+    {
+        title: "PLM Core Concepts",
+        tagline: "Enterprise Industry Terms & Recruiter Keywords",
+        badge: "Industry Standards",
+        icon: plm,
+        skills: [
+            "Product Lifecycle",
+            "Product Development Process",
+            "Product Data Management",
+            "BOM Management",
+            "EBOM (Engineering BOM)",
+            "MBOM (Manufacturing BOM)",
+            "Configuration Management",
+            "Change Management",
+            "Document Management",
+            "Revision Management",
+            "Version Management",
+            "Workflow Management",
+            "Requirements Management",
+            "Product Structure",
+            "Role-Based Access Control",
+            "Engineering Change Process",
+            "Release Management"
+        ]
+    }
+];
+
+// EPM Handlers Worked With (Specific hands-on list)
+export const epmHandlers = [
+    { name: "Create Form", type: "Action Handler", description: "Creates custom form business objects dynamically during workflow transition." },
+    { name: "Display Form", type: "Action Handler", description: "Prompts users with required forms for input or verification at review stages." },
+    { name: "Hold Form", type: "Action Handler", description: "Retains and locks form states during specific validation checks." },
+    { name: "Demote", type: "Action Handler", description: "Transitions target objects to previous workflow stages upon review failure." },
+    { name: "Check Object Properties", type: "Rule Handler", description: "Validates mandated attributes and properties prior to stage progression." },
+    { name: "Check Condition", type: "Rule Handler", description: "Evaluates conditional branching logic across workflow paths." },
+    { name: "Validate Target Objects", type: "Rule Handler", description: "Ensures targets conform to required item types and release statuses." },
+    { name: "Check Related Objects", type: "Rule Handler", description: "Verifies dependent BOM items, datasets, and named references." },
+    { name: "Create Sub-process", type: "Action Handler", description: "Spawns modular child workflows for asynchronous departmental tasks." },
+    { name: "Set Property", type: "Action Handler", description: "Automates attribute population and status stamping on target revisions." },
+    { name: "Auto Assign", type: "Action Handler", description: "Assigns review and signoff tasks dynamically based on roles and groups." },
+    { name: "Demote on Reject", type: "Action Handler", description: "Enforces strict quality governance by rolling back rejected deliverables." }
+];
+
+// Quick Summary Categories (As requested in summary section)
+export const summarySkills = [
+    {
+        category: "PLM",
+        items: ["Teamcenter", "PLM", "BMIDE", "RAC", "Active Workspace", "ITK", "SOA", "Workflow", "EPM Handlers", "Access Manager", "Query Builder", "Report Builder"],
+        color: "blue"
+    },
+    {
+        category: "Programming",
+        items: ["C", "C++", "Java", "Python", "JavaScript", "SQL"],
+        color: "cyan"
+    },
+    {
+        category: "Web Technologies",
+        items: ["HTML", "CSS", "React.js", "Node.js", "Express.js", "REST APIs"],
+        color: "emerald"
+    },
+    {
+        category: "Core CS",
+        items: ["DSA", "OOP", "DBMS", "Operating Systems", "Computer Networks", "System Design", "Cloud Computing", "Software Engineering"],
+        color: "indigo"
+    },
+    {
+        category: "Databases",
+        items: ["SQL", "MongoDB", "NoSQL", "MariaDB", "Redis", "Neo4j", "InfluxDB"],
+        color: "amber"
+    },
+    {
+        category: "Tools & Deployment",
+        items: ["Git", "GitHub", "Teamcenter Deployment Center", "BMIDE"],
+        color: "purple"
+    }
+];
+
+// Technical Experience (Replacing generic work experience with complete profile breakdown)
 export const experiences = [
     {
-        title: "React.js Developer",
-       
-        iconBg: "#accbe1",
-       
+        title: "PLM & Teamcenter Specialization",
+        company_name: "Siemens Teamcenter PLM",
+        icon: teamcenter,
+        iconBg: "#0284C7",
+        date: "Specialization & Hands-on",
         points: [
-            "Developed and maintained web applications using React.js.",
-            "Collaborated with cross-functional teams.",
-            "Implemented responsive UI and cross-browser compatibility.",
-            "Participated in code reviews and best practices."
+            "Worked with Siemens Teamcenter and Product Lifecycle Management concepts.",
+            "Hands-on exposure to BMIDE configuration, business objects, properties, LOVs, relations, forms, datasets, and naming rules.",
+            "Worked with Teamcenter Rich Client (RAC), Active Workspace (AWC), administration, product structure, BOM, revision/version management, and access control.",
+            "Designed Teamcenter workflows using workflow templates, role-based routing, approvals, rejection/demotion handling, and EPM handlers.",
+            "Gained foundational exposure to Teamcenter ITK, Method Extensions, Handler Extensions, DLL customization, SOA, and deployment concepts."
         ],
     },
     {
-        title: "React Native Developer",
-       
-        iconBg: "#fbc3bc",
-     
+        title: "Programming & Development",
+        company_name: "Software Engineering & Full-Stack",
+        icon: cpp,
+        iconBg: "#3B82F6",
+        date: "Engineering Foundation",
         points: [
-            "Built scalable mobile applications using React Native.",
-            "Worked closely with backend teams.",
-            "Improved performance and UI responsiveness.",
-            "Followed clean architecture principles."
+            "Studied and practiced C, C++, Java, Python, JavaScript, HTML, CSS, SQL, and Git/GitHub.",
+            "Built a foundation in object-oriented programming, modular programming, exception handling, file handling, and database connectivity.",
+            "Familiar with web development concepts including React.js, Node.js, Express.js, REST APIs, MongoDB, and authentication."
         ],
     },
     {
-        title: "Web Developer",
-       
-        iconBg: "#b7e4c7",
-     
+        title: "Data Structures & Algorithms",
+        company_name: "Algorithmic Problem Solving",
+        icon: dsa,
+        iconBg: "#8B5CF6",
+        date: "Core Competency",
         points: [
-            "Developed e-commerce web applications.",
-            "Integrated REST APIs.",
-            "Optimized application performance.",
-            "Maintained code quality standards."
+            "Studied fundamental data structures including arrays, strings, linked lists, stacks, queues, trees, graphs, hash tables, and heaps.",
+            "Practiced searching, sorting, recursion, traversal, and common algorithmic problem-solving techniques.",
+            "Used programming-based problem solving to strengthen logical thinking and coding fundamentals."
         ],
     },
     {
-        title: "Full stack Developer",
-      
-        iconBg: "#a2d2ff",
-       
+        title: "Core Computer Science",
+        company_name: "Computer Science Engineering (CSE)",
+        icon: cs,
+        iconBg: "#0D9488",
+        date: "Academic & Systems Foundation",
         points: [
-            "Developed full-stack applications using MERN stack.",
-            "Designed scalable backend services.",
-            "Integrated authentication and database systems.",
-            "Deployed applications on cloud platforms."
+            "Studied Operating Systems, Computer Networks, DBMS, Object-Oriented Software Engineering, Computer Architecture, System Design, Cloud Computing, and Software Engineering concepts.",
+            "Familiar with database concepts including relational databases, SQL, normalization, transactions, indexing, and NoSQL fundamentals.",
+            "Studied networking fundamentals including OSI/TCP-IP models, protocols, IP addressing, HTTP/HTTPS, and client-server architecture."
         ],
     },
+    {
+        title: "PLM Enterprise Implementations",
+        company_name: "Flagship Projects",
+        icon: plm,
+        iconBg: "#00646E",
+        date: "Project Execution",
+        points: [
+            "Honda Hybrid Bike – Teamcenter PLM Workflow & Configuration: Designed product-development workflows with role-based approvals, document management, workflow automation, and Teamcenter configuration.",
+            "Heavy Engineering Equipment Configuration System: Designed a Teamcenter configuration model using business objects, properties, LOVs, naming rules, access control, and approval workflows."
+        ],
+    }
+];
+
+// Flagship PLM Projects
+export const plmProjects = [
+    {
+        title: "Honda Hybrid Bike – Teamcenter PLM Workflow & Configuration",
+        tagline: "End-to-End Product Development Lifecycle & Workflow Automation",
+        icon: teamcenter,
+        theme: "btn-back-blue",
+        badge: "Flagship PLM Project",
+        highlights: [
+            "BMIDE data model configuration tailored for hybrid automotive BOM assembly",
+            "Business objects and custom properties definition for hybrid bike parts",
+            "Organization, roles, and groups architecture for multi-department routing",
+            "Product development workflow with automated milestone validation",
+            "Approval and rejection workflow with demote on reject logic",
+            "Configured custom EPM handlers for target validation and form population",
+            "Role-based access control and project-level data security",
+            "Active Workspace (AWC) dashboard tiles and declarative UI configuration",
+            "Document approval and named reference lifecycle management",
+            "Product improvement workflow and engineering change process",
+            "Foundational Teamcenter customization and server extension handlers"
+        ],
+        techStack: ["Siemens Teamcenter", "BMIDE", "AWC", "Workflow Designer", "EPM Handlers", "Access Manager", "RAC"]
+    },
+    {
+        title: "Heavy Engineering Equipment Configuration System",
+        tagline: "Modular Equipment Configuration, Dependent LOVs & Product Structure",
+        icon: bmide,
+        theme: "btn-back-yellow",
+        badge: "Enterprise Configuration",
+        highlights: [
+            "Equipment configuration architecture for high-complexity machinery",
+            "Persistent properties modeling in BMIDE for technical specifications",
+            "Hierarchical LOV configuration with dependent LOV concepts",
+            "Intelligent naming rules enforcement for serial, part, and drawing numbering",
+            "Multi-level product structure and BOM breakdown (EBOM & MBOM)",
+            "Role-based access governance with Access Manager privileges",
+            "Multi-stage approval workflow with automated signoff routing",
+            "Reports and executive dashboard setup via Report Builder & Query Builder",
+            "Full BMIDE data model packaging and live deployment testing"
+        ],
+        techStack: ["BMIDE", "Product Structure / BOM", "Dependent LOVs", "Naming Rules", "Access Manager", "Query Builder", "Report Builder"]
+    }
 ];
 
 export const socialLinks = [
@@ -95,8 +420,24 @@ export const socialLinks = [
     { name: "LinkedIn", iconUrl: linkedin, link: "https://www.linkedin.com/in/jaskaran-guru" }
 ];
 
+// All Projects (Flagship PLM projects placed prominently at the top)
 export const projects = [
-    
+    {
+        iconUrl: teamcenter,
+        theme: "btn-back-blue",
+        name: "Honda Hybrid Bike – Teamcenter PLM Workflow & Configuration",
+        description: "Comprehensive product development workflow with role-based approvals, BMIDE data modeling, EPM handlers, Active Workspace, and document lifecycle governance.",
+        link: "https://github.com/Jaskaran-Guru",
+        
+    },
+    {
+        iconUrl: bmide,
+        theme: "btn-back-yellow",
+        name: "Heavy Engineering Equipment Configuration System",
+        description: "Enterprise configuration system with persistent properties, dependent LOVs, naming rules, product structure/BOM, role-based access, and Query/Report builders.",
+        link: "https://github.com/Jaskaran-Guru",
+        
+    },
     {
         iconUrl: car,
         theme: "btn-back-blue",
@@ -174,7 +515,6 @@ export const projects = [
         description: "Pomodoro technique timer with task management and productivity tracking.",
         link: "https://github.com/Jaskaran-Guru/Parmodaro-Clock",
     },
-    
     {
         iconUrl: car,
         theme: "btn-back-blue",

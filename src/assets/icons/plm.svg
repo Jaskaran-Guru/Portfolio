@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="plmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00646E"/>
+      <stop offset="50%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#F0FDF4" stroke="#00646E" stroke-width="2" stroke-opacity="0.2"/>
+  
+  <!-- Circular Lifecycle Arrows -->
+  <path d="M64 26 A38 38 0 0 1 102 64" fill="none" stroke="#00646E" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="102,62 108,72 96,72" fill="#00646E"/>
+
+  <path d="M102 64 A38 38 0 0 1 64 102" fill="none" stroke="#0284C7" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="62,102 72,108 72,96" fill="#0284C7"/>
+
+  <path d="M64 102 A38 38 0 0 1 26 64" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="26,66 20,56 32,56" fill="#10B981"/>
+
+  <path d="M26 64 A38 38 0 0 1 64 26" fill="none" stroke="#0D9488" stroke-width="6" stroke-linecap="round"/>
+  <polygon points="66,26 56,20 56,32" fill="#0D9488"/>
+
+  <!-- Center Gear / CAD Product -->
+  <circle cx="64" cy="64" r="16" fill="url(#plmGrad)"/>
+  <circle cx="64" cy="64" r="6" fill="#FFFFFF"/>
+  <text x="64" y="68" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="10" fill="#FFFFFF" text-anchor="middle">PLM</text>
+</svg>

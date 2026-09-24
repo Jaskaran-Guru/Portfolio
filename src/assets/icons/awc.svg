@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="awcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#00A3A6"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#F0FDF4" stroke="#00A3A6" stroke-width="2" stroke-opacity="0.2"/>
+  
+  <!-- Browser / UI Tile Shell -->
+  <rect x="22" y="24" width="84" height="66" rx="8" fill="#1E293B"/>
+  <!-- Browser top bar -->
+  <rect x="22" y="24" width="84" height="14" rx="8" fill="#334155"/>
+  <circle cx="28" cy="31" r="2.5" fill="#EF4444"/>
+  <circle cx="35" cy="31" r="2.5" fill="#F59E0B"/>
+  <circle cx="42" cy="31" r="2.5" fill="#10B981"/>
+  <rect x="52" y="28" width="46" height="6" rx="3" fill="#475569"/>
+
+  <!-- Active Workspace Dashboard Tiles -->
+  <rect x="28" y="44" width="22" height="18" rx="4" fill="url(#awcGrad)"/>
+  <rect x="54" y="44" width="22" height="18" rx="4" fill="#00646E"/>
+  <rect x="80" y="44" width="20" height="18" rx="4" fill="#38BDF8"/>
+
+  <rect x="28" y="66" width="34" height="18" rx="4" fill="#475569"/>
+  <rect x="66" y="66" width="34" height="18" rx="4" fill="url(#awcGrad)"/>
+
+  <!-- Badge label -->
+  <rect x="24" y="98" width="80" height="18" rx="5" fill="#00646E"/>
+  <text x="64" y="111" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="11" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ACTIVE WORKSPACE</text>
+</svg>

@@ -26,6 +26,27 @@ import arrow from './arrow.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
 
+// New PLM, Teamcenter & Technical Icons
+import siemens from './siemens.svg'
+import teamcenter from './teamcenter.svg'
+import plm from './plm.svg'
+import bmide from './bmide.svg'
+import workflow from './workflow.svg'
+import awc from './awc.svg'
+import itk from './itk.svg'
+import deployment from './deployment.svg'
+import c from './c.svg'
+import cpp from './cpp.svg'
+import java from './java.svg'
+import python from './python.svg'
+import sql from './sql.svg'
+import mariadb from './mariadb.svg'
+import redis from './redis.svg'
+import neo4j from './neo4j.svg'
+import influxdb from './influxdb.svg'
+import dsa from './dsa.svg'
+import cs from './cs.svg'
+
 export {
     css,
     express,
@@ -53,5 +74,24 @@ export {
     threads,
     arrow,
     soundon,
-    soundoff
+    soundoff,
+    siemens,
+    teamcenter,
+    plm,
+    bmide,
+    workflow,
+    awc,
+    itk,
+    deployment,
+    c,
+    cpp,
+    java,
+    python,
+    sql,
+    mariadb,
+    redis,
+    neo4j,
+    influxdb,
+    dsa,
+    cs
 }

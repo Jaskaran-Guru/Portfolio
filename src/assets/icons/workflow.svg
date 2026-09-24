@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+    <linearGradient id="wfBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#ECFDF5" stroke="#10B981" stroke-width="2" stroke-opacity="0.2"/>
+  
+  <!-- Start Node -->
+  <circle cx="34" cy="40" r="14" fill="url(#wfGrad)"/>
+  <path d="M30 34l10 6-10 6z" fill="#FFFFFF"/>
+
+  <!-- Transition Line -->
+  <path d="M48 40h20" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+  <path d="M64 36l6 4-6 4" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Review / Task Node -->
+  <rect x="74" y="28" width="28" height="24" rx="6" fill="url(#wfBlue)"/>
+  <path d="M82 40l4 4 8-8" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Routing Path down -->
+  <path d="M88 52v18" stroke="#0284C7" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Decision / Condition Node -->
+  <polygon points="88,70 102,84 88,98 74,84" fill="#F59E0B"/>
+  <text x="88" y="88" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle">?</text>
+
+  <!-- Complete / Return Path -->
+  <path d="M74 84H48" stroke="#10B981" stroke-width="3" stroke-linecap="round"/>
+  <path d="M52 80l-6 4 6 4" fill="none" stroke="#10B981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="34" cy="84" r="12" fill="#00646E"/>
+  <path d="M30 84l3 3 6-6" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Label Badge -->
+  <rect x="22" y="104" width="84" height="16" rx="4" fill="#059669"/>
+  <text x="64" y="116" font-family="'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="9" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">WORKFLOW</text>
+</svg>

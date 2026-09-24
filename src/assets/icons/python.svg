@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pyBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#387EB8"/>
+      <stop offset="100%" stop-color="#366994"/>
+    </linearGradient>
+    <linearGradient id="pyYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE873"/>
+      <stop offset="100%" stop-color="#FFD43B"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="26" fill="#F8FAFC" stroke="#387EB8" stroke-width="2" stroke-opacity="0.15"/>
+  <!-- Top Blue Snake -->
+  <path d="M63.5 22c-21.7 0-20.3 9.4-20.3 9.4l.02 9.8h20.7v3h-29c-8.4 0-14.7 5.1-14.7 14.8 0 9.7 6.4 14.4 14.7 14.4h4.4v-6.2c0-8.8 7.5-16.5 16.5-16.5h20.6c7.4 0 13.5-5.9 13.5-13.4V34.6c0-7.7-6-12.6-14.2-12.6h-12.5zm-5.7 6.4a3.1 3.1 0 1 1 0 6.2 3.1 3.1 0 0 1 0-6.2z" fill="url(#pyBlue)"/>
+  <!-- Bottom Yellow Snake -->
+  <path d="M64.5 106c21.7 0 20.3-9.4 20.3-9.4l-.02-9.8H64.1v-3h29c8.4 0 14.7-5.1 14.7-14.8 0-9.7-6.4-14.4-14.7-14.4h-4.4v6.2c0 8.8-7.5 16.5-16.5 16.5H52c-7.4 0-13.5 5.9-13.5 13.4v12.7c0 7.7 6 12.6 14.2 12.6h11.8zm5.7-6.4a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2z" fill="url(#pyYellow)"/>
+</svg>

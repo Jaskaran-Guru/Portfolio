@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <rect width="128" height="128" rx="26" fill="#FEF2F2" stroke="#DC2626" stroke-width="2" stroke-opacity="0.2"/>
+  <!-- Redis isometric layered blocks -->
+  <polygon points="64,22 102,40 64,58 26,40" fill="#EF4444"/>
+  <polygon points="26,40 64,58 64,68 26,50" fill="#B91C1C"/>
+  <polygon points="64,58 102,40 102,50 64,68" fill="#DC2626"/>
+
+  <polygon points="64,52 102,70 64,88 26,70" fill="#EF4444"/>
+  <polygon points="26,70 64,88 64,98 26,80" fill="#B91C1C"/>
+  <polygon points="64,88 102,70 102,80 64,98" fill="#DC2626"/>
+
+  <text x="64" y="116" font-family="'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="12" fill="#DC2626" text-anchor="middle" letter-spacing="1">REDIS</text>
+</svg>
